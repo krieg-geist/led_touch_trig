@@ -24,13 +24,12 @@ const uint8_t OUT_PINS[] = { 27, 26, 15, 14 };   // { 9, 10, 11, 12 };
 const uint8_t TOUCH_PINS[] = { 11, 10, 9, 8 };  // { 11, 10, 9, 8 };
 const uint8_t LED_OFFSETS[] = { 0, 13, 30, 43 };  // { 11, 10, 9, 8 };
 
+
 const uint8_t NUM_LED_CIRCLES = 3;
 const uint8_t LEDS_PER_CIRCLE[NUM_LED_CIRCLES] = { 12, 16, 12 };
-const uint8_t NUM_LEDS = (12 + 16 + 12 + NUM_LED_CIRCLES - 1);
+const uint8_t NUM_LEDS = (12 + 16 + 12 + 3);
 
 CRGB leds[NUM_LEDS];
-//CRGB* leds[NUM_LED_CIRCLES];
-
 
 Adafruit_MPR121 cap = Adafruit_MPR121();
 uint16_t lasttouched = 0;
